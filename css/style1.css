@@ -93,12 +93,13 @@ ul>li {
     justify-content: space-between;
     align-items: center;
 }
+
 @media (max-width: 991px) {
     .row-item-central {
         flex-direction: column;
     }
-      
 }
+
 @media (max-width: 991px) {
     .container-slide {
         flex-direction: column;
@@ -441,4 +442,41 @@ background-color: #F36F8F;
 }
 .slide-item-details-item {
     color: #4a4c70;
+}
+
+/* TODO: перечитать наследование, выборку и селекторы */
+.individual-radiogroup input[type]:checked + label.color-blue {
+
+}
+
+.with-submenu {
+    position: relative;
+}
+
+.with-submenu:hover > ul {
+    display: block;
+}
+
+.display-list > li {
+    display: list-item;
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid #bbb;
+    background-color: #ad90c7;
+    cursor: pointer;
+    transition: background-color .3s;
+    margin: 0;
+}
+
+.display-list > li:hover {
+    background-color: rgba(216, 216, 216, 1)
+}
+
+.submenu {
+    position: absolute;
+    left: -10px;
+    top: 0;
+    padding-top: 55px;
+    z-index: 1;
+    display: none;
 }
