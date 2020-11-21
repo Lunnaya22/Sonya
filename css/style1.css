@@ -493,15 +493,23 @@ background-color: #F36F8F;
   opacity: 0.8;
 }
 .with-submenu:hover::before {
-
   background:gold;
   left:0;
   right:0;
 }
 .submenu {
-    display: block;
+    display: none;
     width: 190px;
+    position: absolute;
+    left: -10px;
+    top: 0;
+    padding-top: 45px;
+    z-index: 3;
 }
+.with-submenu:hover .submenu {
+    display: block;
+}
+
 .display-list > li {
     display: list-item;
     padding: 5px 10px;
@@ -511,6 +519,7 @@ background-color: #F36F8F;
     transition: background-color .3s;
     margin: 0;
     font-size: 13px;
+    list-style: none;
 }
 
 .display-list > li:hover {
@@ -535,13 +544,6 @@ background-color: #F36F8F;
     margin-top: 4px;
     transition: width .3s;
     z-index: 2;
-}
-.submenu {
-    position: absolute;
-    left: -10px;
-    top: 0;
-    padding-top: 45px;
-    z-index: 1;
 }
 .block3 {
     margin-top: 20px;
