@@ -539,16 +539,38 @@ background-color: #F36F8F;
     left: 4px;
     transform: skewX(39deg);
 }
-.display-list > a::after {
-    content: "";
+.display-list > li a {
+    display: inline-block;
+    position: relative;
+    padding: 5px 0;
+}
+
+.display-list > li:after a {
+    content: '';
     display: block;
-    width: 0%;
     height: 2px;
     background-color: #efc940;
     margin-top: 4px;
     transition: width .3s;
     z-index: 3;
 }
+
+.style1 a::after {
+    content: '';
+    height: 2px;
+    background-color: yellow;
+    bottom: 0;
+    left: 0;
+    /* right: 100%; */
+    width: 0;
+    transition: width .3s;
+    position: absolute;
+}
+
+.style1 li:hover a::after {
+    width: 100%;
+}
+
 .submenu-style1 {
     width: 50%;
 }
@@ -564,7 +586,9 @@ background-color: #F36F8F;
 
 
 
-
+.submenu::before {
+    content: '';
+}
 
 
 
@@ -669,3 +693,14 @@ background-color: #F36F8F;
   .sidepanel-close :hover {
     opacity: .75;
   }
+
+  
+.grid-block {
+    width: 33.33%;
+    height: 100px;
+}
+
+.grid-block--2x {
+    width: 66.66%;
+    height: 200px;
+}
