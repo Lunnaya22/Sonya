@@ -1010,4 +1010,37 @@ background-color: #F36F8F;
     background-color: #F8AC3A;
 }
 
+.d-flex-mobile {
+  display: none !important;
+}
 
+@media (max-width: 768px) {
+  .d-none-mobile {
+    display: none !important;
+  }
+
+  .d-flex-mobile {
+    display: flex !important;
+  }
+
+  .block3-top {
+    height: auto;
+  }
+
+  .block3-top-right {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 30px 0;
+  }
+
+  .block3-top > div {
+    width: 100%;
+  }
+
+  .block3-top-right__inner {
+    position: static;
+    margin: 0;
+    padding: 0;
+  }
+}
