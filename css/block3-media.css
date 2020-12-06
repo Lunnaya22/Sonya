@@ -4,19 +4,10 @@
 
 
 @media (max-width: 768px) {
-.d-none-mobile {
-  display: none !important;
-}
-}
-<<<<<<< HEAD
-@media (max-width: 768px) {
-    .d-flex {
-       display: flex ;
-       width: 100% !important;
-       flex-direction: column;
-    }
+  .d-none-mobile {
+    display: none !important;
   }
-=======
+}
   
 .d-flex-mobile {
   display: flex !important;
@@ -27,4 +18,18 @@
      display: none;
   }
 }
->>>>>>> 469fe572433158afab760560b9571511a2c46ef6
+
+.col-md-4,
+.col-md-8 {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .col-md-4 {
+    width: calc(100% / 3);
+  }
+
+  .col-md-8 {
+    width: calc((100% / 3) * 2);
+  }
+}
