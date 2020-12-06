@@ -1,0 +1,17 @@
+body, html {
+  box-sizing: border-box
+}
+
+.d-flex-mobile {
+  display: none !important;
+}
+
+@media (max-width: 768px) {
+  .d-none-mobile {
+    display: none !important;
+  }
+
+  .d-flex-mobile {
+    display: flex !important;
+  }
+}
