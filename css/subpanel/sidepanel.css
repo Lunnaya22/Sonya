@@ -1,0 +1,51 @@
+.sidepanel-wrapper {
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0,0,0,.4);
+  z-index: 2;
+  overflow-y: auto;
+}
+
+.sidepanel {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 350px;
+  background-color: #fff;
+  box-shadow: 5px 0 10px 0 rgba(0,0,0,.1);
+  padding: 110px 0 50px 0;
+}
+
+.sidepanel-close {
+  position: absolute;
+  top: 12px;
+  left: 25px;
+}
+
+.sidepanel-content {
+  padding: 0 20px;
+}
+
+.sidepanel-nav {
+  padding-left: 25px;
+}
+
+.sidepanel-nav  > div {
+  padding: 25px 0;
+}
+
+.sidepanel-button {
+  margin-top: 30px;
+}
+
+.sidepanel-button button {
+  width: 100%;
+  padding: 20px 10px;
+  box-shadow: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  border: 0;
+}
