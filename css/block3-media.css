@@ -4,8 +4,9 @@
 
 
 @media (max-width: 768px) {
-.d-none-mobile {
-  display: none !important;
+  .d-none-mobile {
+    display: none !important;
+  }
 }
   
 .d-flex-mobile {
@@ -17,3 +18,19 @@
      display: none;
   }
 }
+
+.col-md-4,
+.col-md-8 {
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .col-md-4 {
+    width: calc(100% / 3);
+  }
+
+  .col-md-8 {
+    width: calc((100% / 3) * 2);
+  }
+}
+
