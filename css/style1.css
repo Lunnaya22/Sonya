@@ -475,10 +475,10 @@ background-color: #F36F8F;
     color: #4a4c70;
 }
 
-/* TODO: перечитать наследование, выборку и селекторы */
+/* TODO: перечитать наследование, выборку и селекторы 
 .individual-radiogroup input[type]:checked + label.color-blue {
 
-}
+}*/
 
 .with-submenu {
     position: relative;
@@ -1049,7 +1049,7 @@ background-color: #F36F8F;
             width: 100%;
             height: 100%;
         }
-        ..block3-central img {
+        .block3-central img {
             height: 100%;
         }
         .block3-top-right {
@@ -1080,6 +1080,16 @@ background-color: #F36F8F;
       }
   
 
+@media (max-width: 768px) {
+  .d-none-mobile {
+    display: none !important;
+  }
 
+  .d-flex-mobile {
+    display: flex !important;
+  }
 
-
+  .block3-top {
+    height: auto;
+  }
+}
