@@ -8,7 +8,6 @@
   display: none !important;
 }
 }
-<<<<<<< HEAD
 @media (max-width: 768px) {
     .d-flex {
        display: flex ;
@@ -16,15 +15,3 @@
        flex-direction: column;
     }
   }
-=======
-  
-.d-flex-mobile {
-  display: flex !important;
-}
-
-@media (max-width: 768px) {
-  .block3-top-left__img {
-     display: none;
-  }
-}
->>>>>>> 469fe572433158afab760560b9571511a2c46ef6

@@ -561,7 +561,6 @@ background-color: #F36F8F;
 
 .submenu.display-list.style1 {
 width: 300px;
-display: flex;
 flex-wrap: wrap;
 background-color: #2e0258;
 margin-top: 15px;

@@ -1,0 +1,65 @@
+.data {
+    display: flex;
+}
+.data > select {
+    width: 129px;
+    height: 30px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: #9399ee;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    margin-right: 10px;
+    border-width: 2px;
+    color: gray;
+}
+.name {
+    display: block;
+}
+.name > input {
+    margin-right: 5px;
+    width: 192px;
+    height: 26px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: #9399ee;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-width: 2px;
+}
+.email > input{
+    margin-right: 5px;
+    width: 192px;
+    height: 26px;
+    border-radius: 5px;
+    border-color: black;
+    background-color: #9399ee;
+    text-align: center;
+    font-size: 15px;
+    margin-bottom: 10px;
+    border-width: 2px;
+}
+.gender {
+    color: grey;
+}
+.gender > input {
+    width: 15px;
+    height: 15px;
+}
+.politics {
+    color: gray;
+    font-size: 17px;
+}
+.buttom {
+    border-radius: 5px;
+    border-color: black;
+    background-color:#5754f5;
+    height: 40px;
+    width: 200px;
+    color: black;
+    font-size: 15px;
+    font-weight: bolder;
+    margin-top: 20px;
+}
