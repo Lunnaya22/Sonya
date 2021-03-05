@@ -7,7 +7,6 @@
     <title>HTML5</title>
 
     <link rel="stylesheet" href="CSS/style.css">
-    <link href="JS/jsk.js">
 </head>
 
 <body>
@@ -91,11 +90,26 @@
         <div class="email">
             <input type="text" placeholder="Email" />
         </div>
+        <div class="pass">
+            <input type="password" placeholder="Password" />
+        </div>
+        <div class="pass">
+            <input type="password" placeholder="Confirm your password" />
+        </div>
         <div class="gender male">
-            <input type="radio" name="gender" id="" value="male" checked="checked"> Male
+            <label for="male">
+                <input type="radio" name="gender" id="male" class="j-gender-input" value="male" checked="checked"> Male
+            </label>
         </div>
         <div class="gender female">
-            <input type="radio" name="gender" id="" value="female" checked="checked"> Female
+            <label for="female">
+                <input type="radio" name="gender" id="female" class="j-gender-input" value="female" checked="checked"> Female
+            </label>
+        </div>
+        <div>
+            show if it's 
+            <span class="j-text-gender j-text-male d-none">male</span> 
+            <span class="j-text-gender j-text-female">female</span> 
         </div>
         <div class="politics">
             <div>
@@ -111,4 +125,6 @@
         </div>
         <input type="submit" value="Send" class="buttom">
     </form>
+
+    <script src="./js/jsk.js"></script>
 </body>
