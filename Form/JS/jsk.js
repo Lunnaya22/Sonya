@@ -8,6 +8,8 @@
 
 // const form = document.getElementById('test-form');
 const genderInputs = document.querySelectorAll('.j-gender-input');
+const form = document.getElementById('form');
+const nameFields = document.querySelectorAll('input[data-valid *= "name"]');
 
 for (let input of genderInputs) {
     input.addEventListener('change', function(e) {
@@ -22,6 +24,30 @@ for (let input of genderInputs) {
         document.querySelector(`.j-text-${inputValue}`).classList.remove('d-none');
     })
 }
+
+form.addEventListener('submit', (e) => {
+    e.preventDefault();
+})
+
+for (let input of nameFields) {
+    input.addEventListener('blur', (e) => {
+        e.target.value && allLetter(e.target.value)
+    })
+}
+
+
+function allLetter(inputtxt) {
+   const letters = /^[A-Za-z]+$/;
+
+    if (inputtxt.match(letters)) {
+        return true;
+    } else {
+        alert("message");
+
+        return false;
+    }
+}
+
 
 
 // form.addEventListener('submit', function(event) {

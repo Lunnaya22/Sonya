@@ -10,11 +10,12 @@
 </head>
 
 <body>
-    <form action="/sens-data" method="POST">
+    <form id="form" action="/sens-data" method="POST">
         <div class="name">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Second Name">
+            <input type="text" data-valid="name" placeholder="Name" required />
+            <input type="text" data-valid="name" placeholder="Second Name" required>
         </div>
+        <div><input type="number" placeholder="Age"></div>
         <div class="data">
             <select name="select" id="data">
                 <option value="dd">1</option>
@@ -88,7 +89,7 @@
             </select>
         </div>
         <div class="email">
-            <input type="text" placeholder="Email" />
+            <input type="email" id="email" placeholder="Email" />
         </div>
         <div class="pass">
             <input type="password" placeholder="Password" />
